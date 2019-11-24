@@ -36,6 +36,9 @@ spec:
         args:
         - --api
         - --api.insecure=true
+        - --entrypoints.web.address=:80
+        - --providers.kubernetescrd
+        - --accesslog
 ---
 kind: Service
 apiVersion: v1
